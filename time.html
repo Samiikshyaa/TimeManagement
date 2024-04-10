@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="timer">
+            <h2>Timer</h2>
+            <div class="timer-container">
+                <div id="display">00:00:00</div>
+                <div class="timer-controls">
+                    <button id="startStop" onclick="startStopTimer()">Start</button>
+                    <button id="reset" onclick="resetTimer()">Reset</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tasks">
+            <h2>Tasks</h2>
+            <ul id="taskList">
+            </ul>
+            <div class="add-task-container">
+                <input type="text" id="newTask" placeholder="Add a new task">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
